@@ -466,6 +466,8 @@ public:
 class DerivedDynamicCast : public BaseDynamicCast {
 public:
 	void text() {
-		std::cout << "This is the Derived Class \n";
+		std::cout << "This is the Derived Class called using dynamic_cast.\n";
 	}
 };
+
+//type_id

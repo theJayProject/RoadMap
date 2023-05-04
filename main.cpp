@@ -123,7 +123,6 @@ int main() {
 	derived_ptr->text();
 	delete base_ptr;
 	//typeid
-	//test test
 
 
 
