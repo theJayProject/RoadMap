@@ -470,4 +470,14 @@ public:
 	}
 };
 
-//type_id
+//typeid
+
+class BaseTypeID {
+public:
+	virtual ~BaseTypeID() {}
+};
+
+class DerivedTypeID : public BaseTypeID {
+public:
+	void text() {}
+};

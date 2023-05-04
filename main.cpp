@@ -2,6 +2,7 @@
 #include "RoadMap.h"
 #include <memory>
 
+
 int main() {
 	//Arithmetics
 	arithmetics();
@@ -123,6 +124,14 @@ int main() {
 	derived_ptr->text();
 	delete base_ptr;
 	//typeid
+	BaseTypeID* base_ptr2 = new DerivedTypeID;
+	if (typeid(*base_ptr2) == typeid(DerivedTypeID)) {
+		std::cout << "This object is a type of DerivedTypeID - This was checked using typeid." << std::endl;
+	}
+	else {
+		std::cout << "Object is not of type DerivedTypeID!" << std::endl;
+	}
+	delete base_ptr2;
 
 
 
